@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Junior Web Developer Portfolio </title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      
+    <link rel="icon" type="image/x-icon" href="El Güegüense_El Toro Huaco.png"> <!-- favicon pic -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="scripts.js" defer> </script>  <!-- notice... add this here, not after footer -->
+
+</head>
+
+<body>
+<!-- for a Responsive Header -->
+    <header class="header">
+
+      <nav class="navbar">
+        <div class="logo img">
+          <a href="index.html"> 
+          <img src="abstract-blue-white-grey-squares-geometric-background.jpg" alt="logo" class="animation">
+        </div>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links">
+          <li class="animation"> <a href="#" class="animation"> About Me </a> </li>
+          <li class="animation"> <a href="#" class="animation"> My Portfolio </a> </li>
+          <li class="animation"> <a href="#" class="animation"> Contact Me </a> </li>
+
+        <!-- CTA (call-to-action) BUTTON -->         
+          <li class="animation"> <a href="#" class=" btn"> My Projects </a> </li>
+        </ul>
+
+        <!-- Hamburger -->
+        <div
+          class="hamburger animation"
+          id="hamburger"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#"> About Me </a>
+        <a href="#"> My Portfolio </a>
+        <a href="#"> Contact Me </a>
+        <a href="#"> My Projects </a>
+      </div>
+
+    </header>
+
+<hr>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-image animation">
+            <img src="FBSelfie.jpg" alt="selfie"> 
+        </div>      
+
+        <div class="hero-content">
+          
+          <h1 class="animation">
+          <span class="text-effect">
+            <em> Hi, I'm Francisco </em>
+          </span> </h1>
+
+            <h2> Junior Web Developer </h2>
+
+            <p>
+                Passionate about creating responsive websites,
+                user-friendly interfaces, and modern web experiences
+                using HTML, CSS, JavaScript, and modern technologies.
+            </p>
+
+            <a href="#" class="btn animation"> View My Work </a>
+
+            <br>
+            <br>
+
+<!-- ICONS -->
+        <div class="tech-icons">
+          <img src="HTML-icon.png" alt="HTML icon"/>
+          <img src="CSS3-icon.png" alt="CSS icon"/>
+          <img src="JavaScript-icon.png" alt="JavaScript icon"/>
+          <!-- <img src="BootStrap-icon.png" alt="Bootstrap icon"/> not yet -->
+          <img src="VisualStudioCode-icon.png" alt="VS Code icon"/>
+          <img src="GitHub-icon1.png" alt="Github icon"/>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="fa">
+          <li>  <!-- could also add class="animation"> here -->
+            <i class="fa-solid fa-id-badge"> </i>
+            <u> Available for </u> <br> FT Hire and Contract work <br>
+          </li>
+
+          <br>
+          
+          <li>
+            <i class="fa-solid fa-location-dot"> </i>
+            <u> Location </u> <br> US / Remote            
+          </li>
+      </div>      
+
+    </section>
+
+    <hr>
+
+    <!-- Footer --> 
+    <footer>
+
+        <p>
+          <br>
+          Web Designs by &lt; Fg &gt; <sup> &copy; </sup> All Rights Reserved.
+          Last updated &lbrack; June | 2026 &rbrack;
+        </p>
+    </footer>
+
+    <!-- could also add script tags here -->
+
+</body>
+</html>
+
+<!-- 
+
+from ChatGPT
+
+Here's a complete responsive portfolio webpage for a Junior Web Developer that includes:
+
+Responsive Header with navigation and hamburger menu
+Hero Section
+Profile Image
+About/Introduction content
+Responsive Footer
+Mobile, Tablet, and Desktop support
+Pure HTML, CSS, and JavaScript
+
+Features
+
+✅ Fully Responsive Layout
+✅ Mobile Hamburger Menu
+✅ Sticky Header
+✅ Hero Section with Call-To-Action
+✅ Developer Profile Image
+✅ Modern Gradient Background
+✅ Responsive Footer
+✅ Works on Desktop, Tablet, and Mobile Devices
+✅ Pure HTML, CSS, and JavaScript (No Frameworks Required)
+
+-->
+
+<!-- 
+
+    og was for a Responsive Header 
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"> 
+          <img
+            src="abstract-blue-white-grey-squares-geometric-background.jpg"
+            alt="logo"
+            style="
+              height: 60px;
+              width: 60px;
+              border-radius: 30px;
+              padding: 4px;
+              background-color: blue;" />
+        </div>
+
+        <!-- Desktop view Links 
+        <ul class="nav-links">
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="home2.html"> Home2 </a> </li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#"> Contact Me </a></li>
+        </ul>
+
+        <!-- Hamburger 
+        <div
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      
+      <!-- Mobile view Menu 
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html"> Home </a>
+        <a href="home3.html"> Home2 </a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+    </header> 
+    
+-->      
