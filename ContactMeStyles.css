@@ -1,0 +1,333 @@
+/* CSS for Contact Me page */
+
+/* Browser RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: black;  /* was background: #f4f6f8; or background-image: url(La\ Boquita\ Sunset.jpg); ? */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-style: double;
+    border-width: 7px;
+    border-radius: 13px;
+    border-color: white;    
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    background: transparent; /* was background: #1f2937; */
+    color: white;
+    padding: 1rem;  /* or padding: 20px; ? */ 
+    text-align: center; /* use ? */  
+}
+
+.animation {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.animation:hover {
+    transform: scale(1.3); /* was 1.03 */
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;         
+}
+
+/* Logo header img */
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    padding: 5px;
+    background-color: blue;
+}
+
+.btn {
+    display:inline-block;
+    background:blue;
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover {
+    background:gray;
+}
+
+/* Desktop Menu */
+.nav-links {
+    display: flex;
+    align-items: center;  /* added this one */
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;  /* add ease; ? */
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: blue;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}     
+
+.nav-links a:hover {
+    color: blue;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* Mobile Ph view Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: darkgray;
+  width: 100%;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;  /* add here ? */
+}
+
+.mobile-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: blue;
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover::after {
+    width: 100%;
+}     
+
+.mobile-menu a:hover {
+  color: blue;
+}       
+
+.mobile-menu a:hover {
+    background: lightgray;
+} 
+      
+/* Active Mobile Menu */
+.mobile-menu.active {
+    display: flex;
+}
+      
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}      
+
+/* MAIN (mobile-first stacked layout) */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* IMAGE */
+.profile img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;  /* was border-radius: 12px; ? */
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: blue;
+
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: blue;
+}
+
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+.contact-info a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  background-color: transparent; /* was background: #1f2937; */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;  /* was just 15px */
+  margin-top: 20px;  /* use ? */
+  flex-direction: column;  /* use ? */
+}
+
+footer p {
+    margin:5px 0;  /* needed ? */
+}
+
+/* Viewport/Breakpoint @Media Quiries for screen sizes */
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    }
+
+  .logo img {
+    margin-left: 2rem;
+  }    
+
+  .hamburger {
+    display: flex;
+    margin-right: 2rem;
+    }
+
+  @media (max-width: 600px) {
+    .footer {
+      padding: 3rem 1.5rem 1.5rem;
+      }
+
+    .footer-top {
+      grid-template-columns: 1fr;
+      text-align: center;
+      }
+
+    .footer-brand p {
+      margin: auto;
+      }
+    }
+  }    
+
+/* TABLET */
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile,
+  .contact-info {
+    flex: 1;
+  }
+
+  .profile img {
+    max-width: 350px;
+  }
+
+  @media (max-width: 900px) {
+    .footer-top {
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+      }
+     }
+    }  
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .hero {
+    padding: 2rem 1.25rem;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      }
+    }
+
+/* NOTES/ COMMENTS */    

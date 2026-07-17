@@ -20,12 +20,5 @@
         }
       });
 
-
-// 0g JS for Portfolio home page 3 was... but did not work... why ?? \\
-
-// const hamburger = document.getElementById('hamburger');
-// const navMenu = document.getElementById('nav-menu');
-
-//hamburger.addEventListener('click', () => {
-    // navMenu.classList.toggle('active');
-//});
+// Set current year in footer 
+// document.getElementById("year").textContent = new Date().getFullYear(); 
