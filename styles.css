@@ -1,4 +1,4 @@
-/* Respnosive CSS for Porfolio home page */      
+/* Respnosive CSS for Porfolio Home page */      
       
 * {
   margin: 0;
@@ -88,7 +88,21 @@ body {
 
 .nav-links a:hover {
     color: blue;
-}    
+}
+
+.btn {
+    display:inline-block;
+    background:blue;
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover {
+    background:gray;
+}
 
 /* Hamburger */
 .hamburger {
@@ -152,15 +166,15 @@ body {
 /* Hamburger Animation */
       .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
-      }
+  }
 
       .hamburger.active span:nth-child(2) {
         opacity: 0;
-      }
+  }
 
       .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
-      }
+}
 
 /* Hero */
 .hero{
@@ -223,20 +237,6 @@ body {
     margin-bottom:25px;
     font-size:1.1rem;
     color: white;
-}
-
-.btn {
-    display:inline-block;
-    background:blue;
-    color:white;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:8px;
-    transition:.3s;
-}
-
-.btn:hover {
-    background:gray;
 }
 
 /* TECH STACK icons sec */
@@ -456,7 +456,7 @@ footer p {
     .hero-buttons {
       flex-direction: column;
       }
-    }
+}
 
 /* was Small Mobile 
 @media(max-width:480px){

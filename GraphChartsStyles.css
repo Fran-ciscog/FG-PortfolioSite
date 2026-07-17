@@ -1,0 +1,343 @@
+/* Respnosive CSS for Projects- Graph Charts page */      
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;  /* or background-image: url(La\ Boquita\ Sunset.jpg); ? */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  border-width: 7px;
+  border-radius: 13px;
+  border-color: white;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: transparent;
+  color: white;
+  padding: 1rem;
+}
+
+.animation {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.animation:hover {
+  transform: scale(1.3); /* was 1.03 */
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo header img */
+.logo img {
+  height: 80px;
+   width: 80px;
+  border-radius: 40px;
+  padding: 5px;
+  background-color: blue;
+}
+
+/* Desktop Menu */
+.nav-links {
+  display: flex;
+  align-items: center;  /* added this one */
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;  /* add ease; ? */
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: blue;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}     
+
+.nav-links a:hover {
+    color: blue;
+} 
+
+.btn {
+    display:inline-block;
+    background:blue;
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover {
+    background:gray;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* Mobile Ph view Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: darkgray;
+  width: 100%;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;  /* add here ? */
+}
+
+.mobile-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: blue;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover::after {
+    width: 100%;
+}     
+
+.mobile-menu a:hover {
+  color: blue;
+}       
+
+.mobile-menu a:hover {
+  background: lightgray;
+}
+
+/* Active Mobile Menu */
+.mobile-menu.active {
+    display: flex;
+}
+
+/* Hamburger Animation */
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Section */
+.skills-section{
+    width:100%;
+    padding:3rem 1rem;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.container h1{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:2.5rem;
+    text-decoration: underline;
+    color: white;
+}
+
+.container p {
+    text-align: left;
+    margin-bottom:2.5rem;
+    text-decoration: underline;
+    color: white;
+}
+
+/* GRAPH CONTAINER */
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:12px;
+
+    height:320px;
+
+    overflow-x:auto;
+
+    padding:1rem;
+}
+
+/* EACH BAR */
+.skill{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    min-width:60px;
+
+    height: 95%;
+}
+
+/* Background Track */
+.graph{
+    width:100%;
+    max-width:60px;
+
+    /* was height:250px; use ? */
+
+    background:linear-gradient(to top, white, blue);  /* was     background:linear-gradient(to top,#4facfe,#00f2fe);  */
+
+    border-radius:27px 27px;  /* was border-radius:10px 10px 0 0; */
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    font-weight:bold;
+
+    transition:.5s;
+
+    /* transform-origin:bottom;  use ? */
+}
+
+/* Hover */
+.graph:hover{
+    transform:scale(1.5);
+}
+
+/* Percentage */
+.percent{
+    margin-top:20px;
+    font-size:.9rem;
+    color: white;
+}
+
+/* Skill Name */
+.name{
+    margin-top:12px;
+    text-align:center;
+    font-weight:600;
+    font-size:.9rem;
+    color: white;
+    transition: .5s;
+}
+
+.name:hover {
+    transform: scale(1.5);
+}
+
+/* Footer */
+footer {
+    background: transparent;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    flex-direction: column;  /* use ? */
+}
+
+footer p {
+    margin:5px 0;  /* needed ? */
+}
+
+/* @Media queries for screen sizes */
+
+/* mobile phones */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    }
+
+  .logo img {
+    margin-left: 2rem;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 2rem;
+    }
+}
+
+  @media (max-width: 600px) {
+    .footer {
+      padding: 3rem 1.5rem 1.5rem;
+      }
+
+    .footer-top {
+      grid-template-columns: 1fr;
+      text-align: center;
+      }
+
+    .footer-brand p {
+      margin: auto;
+      }
+    }
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    }
+  }
+  
+/* Small Phones */
+@media (max-width: 480px) {
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+}  
+
+/* comments */
