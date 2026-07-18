@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
   background-color: black;  /* or background-image: url(La\ Boquita\ Sunset.jpg); ? */
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -124,7 +124,8 @@ body {
   display: none;
   flex-direction: column;
   background: darkgray;
-  width: 100%;
+  text-align: center;
+  width: -50%;
 }
 
 .mobile-menu a {
