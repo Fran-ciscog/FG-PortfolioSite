@@ -9,10 +9,10 @@
 body {
   background-color: black;  /* or background-image: url(La\ Boquita\ Sunset.jpg); ? */
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  /* line-height: 1.6;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  use ??? */
   border-style: double;
   border-width: 8px;
   border-radius: 16px;
@@ -178,18 +178,19 @@ body {
 }
 
 /* Section */
-.skills-section{
+
+.skills-section {
     width: 98%;
-    padding: 1rem; /* was padding:3rem 1rem; */
-    margin-top: 0rem;
+    padding: 3rem 1rem; /* or just 1rem; ? */
+    /* margin-top: 0rem;  use ? */
 }
 
-.container{
+.container {
     max-width:1200px;
     margin:auto;
 }
 
-.container h1{
+.container h1 {
     text-align:center;
     font-size:2rem;
     margin-bottom:2.5rem;
@@ -200,58 +201,57 @@ body {
 .container p {
     text-align: center;
     margin-bottom:2.5rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: white;
 }
 
 /* GRAPH CONTAINER */
+
 .box {
     display:flex;
     justify-content:center;
-    
-    gap:15px;
+    align-items: flex-end;  /* use here ? */
+    gap: 12px;
 
-    height: 355px;  /* ? */
+    height: 320px;  /* ? */
 
-    /* overflow-x:auto; */
+    overflow-x:auto; /* use here ? */
 
-    padding: 1.5rem;
-    margin: 0.5rem;
+    padding: 1rem;
+    /* margin: 0.5rem;
     margin-top: 1rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0rem;  use ??? */
     
-    border-left: 5px solid white;
-    border-bottom: 5px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
     
 }
 
-/* EACH BAR */
+/* BARS */
 .skill {
     display:flex;
     flex-direction:column;
     align-items:center;
+
     justify-content: flex-end;
 
-    /* position: relative; use ? */
-
     min-width:60px;
-    height: 97%;  /* or 400px; */
-
+    height: 78%;  /* 80% or 300px;  use here ?? */
 }
 
-/* Background Track */
+/* Background */
 .graph {
-    width:100%;
-    max-width:60px;
+    width: 95%;  /* was 100% */
+    max-width: 50px;  /* was 60px */
 
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
 
-    height: 250px; /* was height:250px; use ? */
+    height: 250px;
 
     background:linear-gradient(to top, white, blue);  /* was background:linear-gradient(to top,#4facfe,#00f2fe);  */
 
-    border-radius:27px 27px;  /* was border-radius:10px 10px 0 0; */
+    border-radius: 25px 25px;  /* or was border-radius:10px 10px 0 0; ? */
 
     display:flex;
     justify-content:center;
@@ -260,28 +260,26 @@ body {
     font-weight:bold;
 
     transition:.5s;
-
-    /* transform-origin:bottom; use ? */
 }
 
 /* Hover */
-.graph:hover{
+.graph:hover {
     transform:scale(1.5);
 }
 
 /* Percentage */
-.percent{
+.percent {
     margin-top: 20px;
-    font-size:.9rem;
+    font-size: 1rem;
     color: white;
 }
 
 /* Skill Name */
-.name{
-    margin-top: 6px;
+.name {
+    margin-top: 12px;
     text-align:center;
-    font-weight:600;
-    font-size:.9rem;
+    font-weight: 600;  /* ? */
+    font-size: 1rem;
     color: white;
     transition: .5s;
 }
@@ -312,16 +310,16 @@ footer p {
     }
 
   .logo img {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .hamburger {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 1rem;
     }
   }
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .footer {
       padding: 3rem 1.5rem 1.5rem;
       }
@@ -331,64 +329,60 @@ footer p {
       text-align: center;
       }
 
-    .footer-brand p {
+    .footer p {
       margin: auto;
-      }
+      }  /* was .footer-brand p */
 }
 
-/* Tablet */
-@media (min-width:768px){
+/* Tablet (768px+ */
+@media (min-width:768px) {
 
-.container h1{
+.container h1 {
     font-size:2.5rem;
 }
 
-.box{
+.box {
 
-    gap:22px;
+    gap:20px;
 
     height:400px;
 
     overflow-x:visible;
 }
 
-.skill{
+.skill {
     min-width:70px;
 }
 
 .graph{
-
-    max-width:70px;
-
-    height:320px;
+    max-width:60px;  /* was 70px */
+    height:310px;  /* was 320px */
 }
 
 .name{
-    font-size:1rem;
-}
-}
-
-/* Desktop */
-@media (min-width:1024px){
-
-.skills-section{
-    padding:5rem 2rem;
+    font-size: 1rem;
+  }
 }
 
-.box{
-    gap:35px;
-}
+/* Desktop (1024px+ ) */
+@media (min-width:1024px) {
+
+.skills-section {
+    padding: 3rem 1rem;  /* was 5rem 2rem */
+  }
+
+.box {
+    gap: 30px;  /* was 35px */
+  }
 
 .graph{
-    width:75px;
-    height:340px;
-
-}
+    width: 70px;  /* was 75px */
+    height: 340px;
+  }
 
 .container h1{
-    font-size:3rem;
-}
-
+    font-size: 2rem;  /* was 3rem */
+  }
 }
 
 

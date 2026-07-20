@@ -48,7 +48,7 @@ body {
 /* Logo header img */
 .logo img {
   height: 80px;
-   width: 80px;
+  width: 80px;
   border-radius: 40px;
   padding: 5px;
   background-color: blue;
@@ -178,7 +178,7 @@ body {
 }
 
 /* Hero */
-.hero{
+.hero {
     min-height:90vh;
     display:flex;
     justify-content:center;
@@ -193,6 +193,37 @@ body {
     ); */
 }
 
+.hero-content {
+    flex:1;  /* or flex:2; ? */
+    justify-content:center;
+}
+
+.hero-content h1 {
+    font-size:3rem;
+    margin-bottom:10px;
+    color: white;
+    /* font-family: cursive; add ? */
+}
+
+.hero-content h2 {
+    color:blue;
+    margin-bottom:20px;
+}
+
+.text-effect {
+    background:linear-gradient(to top, white, blue); /* or background: linear-gradient(267deg, blue 55%, gray 95%, white 65%);  for h1 text effect ?? */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    max-width:600px;
+    margin-bottom:25px;
+    font-size:1.1rem;
+    color: white;
+}
+
 .hero-image {
     flex:1;
     display:flex;
@@ -200,7 +231,7 @@ body {
     margin-bottom: auto;
 }
 
-.hero-image img{
+.hero-image img {
     width:100%;
     max-width:400px;
     border-radius:200px;
@@ -209,38 +240,11 @@ body {
     /* box-shadow:0 10px 30px rgba(0,0,0,.15); ? */
 }
 
-.hero-content{
-    flex:1;  /* or flex:2; ? */
-    justify-content:center;
-}
-
-.hero-content h1{
-    font-size:3rem;
-    margin-bottom:10px;
-    color: white;
-    /* font-family: cursive; add ? */
-}
-
-.hero-content h2{
-    color:blue;
-    margin-bottom:20px;
-}
-
-.text-effect {
-    background: linear-gradient(267deg, blue 55%, gray 95%, white 65%); 
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-content p{
-    max-width:600px;
-    margin-bottom:25px;
-    font-size:1.1rem;
-    color: white;
-}
-
 /* TECH STACK icons sec */
+.icons {
+  text-align: center;
+}
+
 .tech-icons {
   gap: 0.5rem;
   margin-top: 1rem;
@@ -254,8 +258,8 @@ body {
 }
 
 .tech-icons img {
-  width: 85px;
-  height: 85px;
+  width: 95px;
+  height: 95px;
   object-fit: contain;
   transition: transform 0.3s;
   flex-direction: column;  /* or was row; */
@@ -268,20 +272,25 @@ body {
   transform: scale(1.5);
 }
 
+/* Font Awesome sec */
+.fontawesomeicons {
+  text-align: center;  /* or justify-content: center; ? */
+}
+
 .fa {
   list-style: none;
   font-size: 1rem;
   color: white;
   letter-spacing: 2px;
-  justify-content: center;
+  
   line-height: 1.7;
-  flex-direction: column;  /* or row; ? */
+  flex-direction: column; /* or row; ? */
   flex-wrap: wrap;
 }
 
 i {
   color: white;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 /* Footer */
@@ -341,7 +350,7 @@ footer p {
     }
 
   .logo img {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .hamburger {
@@ -356,12 +365,12 @@ footer p {
     }
 
     .hero-content {
-      order: 2;
-      }
+      order: 1;
+      }  /* was 2 */
 
   .hero-image {
-      order: 1;
-      }
+      order: 2;
+      }  /* was 1 */
 
     .hero-content p {
       margin-left: auto;
@@ -373,9 +382,9 @@ footer p {
      }
 
   .hero-image img {
-      max-width: 500px;
+      max-width: 550px;
       }
-    }
+    }  /* was 500px */
 
   @media (max-width: 600px) {
     .footer {
@@ -387,10 +396,10 @@ footer p {
       text-align: center;
       }
 
-    .footer-brand p {
+    .footer p {
       margin: auto;
       }
-    }
+    }  /* was .footer-brand p */
 
 /* was Mobile 
 @media(max-width:768px){

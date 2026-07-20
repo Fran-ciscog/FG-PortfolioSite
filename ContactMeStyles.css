@@ -180,7 +180,7 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }      
 
-/* MAIN (mobile-first stacked layout) */
+/* MAIN Sec (mobile-first stacked layout) */
 .main-container {
   display: flex;
   flex-direction: column;
@@ -202,11 +202,12 @@ body {
 
 /* CONTACT INFO */
 .contact-info {
-  background: lightgray;
+  background: transparent;  /* or background: lightgray; */
   text-align: center;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: white;
+  border-radius: 12px;  /* use ? */
+  padding: 15px;  /* use ? */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* use ? */
 }
 
 .contact-info h2 {
@@ -257,7 +258,7 @@ footer p {
     }
 
   .logo img {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }    
 
   .hamburger {
@@ -275,10 +276,10 @@ footer p {
       text-align: center;
       }
 
-    .footer-brand p {
+    .footer p {
       margin: auto;
       }
-    }
+    }  /* was .footer-brand p */
   }    
 
 /* TABLET */
@@ -303,10 +304,10 @@ footer p {
     grid-template-columns: 1fr 1fr;
     }
 
-    .footer-brand {
+    .footer {
       grid-column: 1 / -1;
       }
-     }
+     }  /* was .footer-brand */
     }  
 
 /* DESKTOP */
