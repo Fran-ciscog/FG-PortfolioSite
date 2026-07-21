@@ -1,5 +1,4 @@
 /* Respnosive CSS for Porfolio Home page */      
-      
 * {
   margin: 0;
   padding: 0;
@@ -324,7 +323,7 @@ footer p {
   .footer-brand {
     grid-column: 1 / -1;
     }
-  }
+}
 
 /* was Tablet 
 @media(max-width:992px){
@@ -364,13 +363,13 @@ footer p {
     padding-top: 2rem;
     }
 
-    .hero-content {
+  .hero-content {
       order: 1;
       }  /* was 2 */
 
   .hero-image {
       order: 2;
-      }  /* was 1 */
+      }  /* was 1... height and width ? */
 
     .hero-content p {
       margin-left: auto;
