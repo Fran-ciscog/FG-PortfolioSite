@@ -1,4 +1,227 @@
 /* Web Dev Skills Graph Chart sec (% bars) CSS */
+
+/* ========== RESET ========== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#222;
+}
+
+/* ========== HEADER ========== */
+
+header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    padding:20px;
+}
+
+.logo{
+  height: 60px;
+  width: 60px;  /* was 120px */
+  border-radius: 30px;   /* was 8px */ 
+  padding: 3px;
+  background-color: blue;
+}
+
+nav a{
+    text-decoration:none;
+    color:#0066cc;
+    font-weight:bold;
+    font-size:1rem;
+}
+
+h1{
+    text-align:center;
+    margin:25px 0;
+}
+
+/* ========== GRAPH ========== */
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.box{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    gap: 2px;
+
+    height: 400px;  /* was 300px; */
+
+    padding: 35px; /* was 20px; */
+
+    border-radius:12px;
+
+    background:white;
+
+    overflow-x:auto;
+}
+
+/* Each Skill bar */
+
+.skill{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    justify-content: flex-end;
+
+    min-width:55px;
+    height: 80%;
+}
+
+/* Bar Area */
+
+.graph{
+ 
+  width:40px;
+
+    background:linear-gradient(to top,#0059ff,#66b3ff);
+
+    border-radius: 50px;  /* was border-radius:8px 8px 0 0; */
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:.5s;
+}
+
+.graph:hover{
+
+    transform:scale(1.5);  /* was (1.05); */
+}
+
+/* Percentage */
+
+.percent{
+
+    padding-top:8px;
+
+    font-size:.8rem;
+
+}
+
+/* Skill Name */
+
+.name{
+
+    margin-top:12px;
+
+    font-size:.8rem;
+
+    text-align:center;
+
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (min-width:768px){
+
+.box{
+
+    height:380px;
+
+    gap:20px;
+
+}
+
+.skill{
+
+    min-width:70px;
+
+}
+
+.graph{
+
+    width:55px;
+
+}
+
+.name{
+
+    font-size:1rem;
+
+}
+
+}
+
+/* ==========================
+   Desktop
+========================== */
+
+@media (min-width:1024px){
+
+.box{
+
+    justify-content:space-evenly;
+
+    height:450px;
+
+}
+
+.graph{
+
+    width:65px;
+
+}
+
+.percent{
+
+    font-size:1rem;
+
+}
+
+.name{
+
+    font-size:1.1rem;
+
+}
+
+}
+
+
+
+
+
+
+
+
+/* was 
 * {
     margin: 0;
     padding: 0;
@@ -14,11 +237,11 @@ body {
   min-height: 100vh;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* line-height: 1.5; use ? */
-  /* overflow-x: hidden; use ? */
+  /* line-height: 1.5; use ? 
+  /* overflow-x: hidden; use ? 
 }
 
-/* header sec */
+/* header sec 
 header {
     margin-left: 1rem;
 }
@@ -41,14 +264,14 @@ header img {
 }
 
 .animation:hover {
-    transform: scale(1.30);  /* was 1.03 */
+    transform: scale(1.30);  /* was 1.03 
 }
 
-/* Graph Chart % Bars Sec */
+/* Graph Chart % Bars Sec 
 .container {
   margin: 20px;
-  padding: 20px;  /* was padding: 40px 20px; */
-  background-color: lightgray; /* or background: linear-gradient(0deg,lightgray, white); ? */
+  padding: 20px;  /* was padding: 40px 20px; 
+  background-color: lightgray; /* or background: linear-gradient(0deg,lightgray, white); ? 
 }
 
 .container h1 {
@@ -58,7 +281,7 @@ header img {
   text-align: center;
 }
 
-/* === FLEXBOX GRAPH CONTAINER === */
+/* === FLEXBOX GRAPH CONTAINER === 
 .box {
   display: flex;
   justify-content: center;
@@ -93,7 +316,7 @@ header img {
     margin-top: -5rem;
 } */
 
-/* === EACH SKILL BAR === */
+/* === EACH SKILL BAR === 
 .box .skill {
   display: flex;
   flex-direction: column;
@@ -107,17 +330,17 @@ header img {
     flex: 1;
     text-align: center;
     margin-left: 1rem;
-} */
+} 
 
-/* GRAPH BAR */
+/* GRAPH BAR 
 .box .skill .graph {
   background: linear-gradient(to right, deepskyblue, navy);
   width: 40px;
-  border-radius: 20px;  /* or was border-radius: 10px 10px 0 0; */
+  border-radius: 20px;  /* or was border-radius: 10px 10px 0 0; 
   color: white;
   font-weight: bold;
   transition: 0.5s ease;
-  /* position: relative; justify-items: center; align-items: flex-start; use ? */
+  /* position: relative; justify-items: center; align-items: flex-start; use ? 
 }
 /* was 
 .box .skill .graph {
@@ -133,7 +356,7 @@ header img {
     bottom: 0rem;
     left: 50%;
     transform: translateX(-50%);
-} */
+} 
 
 /*
 
@@ -156,9 +379,9 @@ header img {
     height: 100%;
     background: rgba(255, 255, 255, .1);
 }
-/* ^ see look up to this point! */
+/* ^ see look up to this point! 
 
-/* PERCENT TEXT */
+/* PERCENT TEXT 
 .percent {
   padding-top: 10px;
   text-align: center;
@@ -174,12 +397,12 @@ header img {
     font-weight: bold;
 } */
 
-/* SKILL NAME */
+/* SKILL NAME 
 .name {
   margin-top: 10px;
   font-weight: bold;
   flex-direction: row;
-  /* text-align: justify; position: relative; use ? */
+  /* text-align: justify; position: relative; use ? 
 }
 /* was 
 .box .skill .name {
@@ -189,14 +412,14 @@ header img {
     transform: translateX(-50%);
     color: white;
     background: deepskyblue;
-} */
+} 
 
 footer {
   padding: 20px;
   text-align: center;
 }
 
-/* Media queries use ?? */
+/* Media queries use ?? 
 
 /* Mobile phone view 
 @media (max-width: 762px) {

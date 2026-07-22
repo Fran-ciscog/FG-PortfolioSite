@@ -369,7 +369,12 @@ footer p {
 
   .hero-image {
       order: 2;
-      }  /* was 1... height and width ? */
+      width: 75%;
+      max-width: 250px;
+      border-radius: 125px;
+      padding: 3px;
+      background-color: blue;
+      }  /* was 1... add height and width here ?? */
 
     .hero-content p {
       margin-left: auto;
