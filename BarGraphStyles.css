@@ -1,7 +1,6 @@
 /* Web Dev Skills Graph Chart sec (% bars) CSS */
 
-/* ========== RESET ========== */
-
+/* Browser RESET */
 *{
     margin:0;
     padding:0;
@@ -12,20 +11,23 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:#f4f6f8;
     color:#222;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-/* ========== HEADER ========== */
+/* HEADER */
 
-header{
-    display:flex;
+header {
+    /* display:flex; */
     flex-direction:column;
-    align-items:center;
+    /* align-items:center; */
     justify-content:center;
     gap:15px;
     padding:20px;
 }
 
-.logo{
+.logo {
   height: 60px;
   width: 60px;  /* was 120px */
   border-radius: 30px;   /* was 8px */ 
@@ -33,68 +35,69 @@ header{
   background-color: blue;
 }
 
-nav a{
-    text-decoration:none;
-    color:#0066cc;
-    font-weight:bold;
-    font-size:1rem;
-}
-
 h1{
     text-align:center;
     margin:25px 0;
 }
 
-/* ========== GRAPH ========== */
+p { text-align: center; }
 
-.container{
-    width:95%;
-    max-width:1200px;
-    margin:auto;
+/* GRAPH */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.box{
+.animation {
+  cursor: pointer;
+  transition: 0.5s;
+}
 
+.animation:hover {
+  transform: scale(1.3); /* was 1.03 */
+}
+
+.box {
     display:flex;
     justify-content:space-between;
     align-items:flex-end;
 
-    gap: 2px;
+    gap: 2px;  /* was 2px; */
 
-    height: 400px;  /* was 300px; */
+    height: 425px; /* was 300px; */
 
-    padding: 35px; /* was 20px; */
+    padding: 20px; /* was 20px; */
 
-    border-radius:12px;
+    border-radius: 7px;
 
     background:white;
 
     overflow-x:auto;
+
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;    
 }
 
 /* Each Skill bar */
-
-.skill{
-
+.skill {
     display:flex;
     flex-direction:column;
     align-items:center;
 
     justify-content: flex-end;
 
-    min-width:55px;
-    height: 80%;
+    /* min-width: 55px;  use ? */
+    height: 60%;  /* ? */
 }
 
-/* Bar Area */
-
-.graph{
- 
-  width:40px;
+/* Bars */
+.graph {
+  width: 45px;
 
     background:linear-gradient(to top,#0059ff,#66b3ff);
 
-    border-radius: 50px;  /* was border-radius:8px 8px 0 0; */
+    border-radius: 50px;  /* was border-radius:8px 8px 0 0; or none for square shape */
 
     display:flex;
 
@@ -109,41 +112,32 @@ h1{
     transition:.5s;
 }
 
-.graph:hover{
-
-    transform:scale(1.5);  /* was (1.05); */
+.graph:hover {
+    transform: scale(1.5);  /* was (1.05); */
 }
 
 /* Percentage */
-
-.percent{
-
-    padding-top:8px;
-
-    font-size:.8rem;
-
+.percent {
+    padding-top: 15px;
+    font-size: 1rem;
 }
 
 /* Skill Name */
+.name {
 
-.name{
+    margin-top: 13px;
 
-    margin-top:12px;
+    font-size: 1rem;
 
-    font-size:.8rem;
+    text-align: center;
 
-    text-align:center;
-
-    font-weight:bold;
+    font-weight: bold;
 }
 
 /* Footer */
-
-footer{
-
+footer {
     text-align:center;
-
-    padding:25px;
+    padding: 25px;
 }
 
 /* ==========================

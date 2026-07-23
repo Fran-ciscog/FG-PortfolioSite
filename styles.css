@@ -189,20 +189,20 @@ body {
 }
 
 .hero-content {
-    flex:1;  /* or flex:2; ? */
-    justify-content:center;
+    flex: 1;  /* or flex:2; ? */
+    justify-content: center;
 }
 
 .hero-content h1 {
-    font-size:3rem;
-    margin-bottom:10px;
+    font-size: 3rem;
+    margin-bottom: 10px;
     color: white;
     /* font-family: cursive; add ? */
 }
 
 .hero-content h2 {
     color:blue;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .text-effect {
@@ -210,6 +210,9 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    /* transition:.5s;
+    transform:scale(1.5);  use/add ?? */
 }
 
 .hero-content p {

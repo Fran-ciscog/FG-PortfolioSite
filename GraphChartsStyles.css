@@ -180,16 +180,16 @@ body {
 /* Section */
 
 .skills-section {
-    width: 85%; /* was 100% */
-    margin: 1rem;
-    margin-left: 5rem;
-    padding: 1rem;  /* was padding: 3rem 1rem; ... or just 1rem; ? */
+    width: 95%; /* was 100% */
+    margin: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem;  /* was padding: 3rem 1rem; ... or just 1rem; ? */
     margin-top: 2rem;  /* use margin-bottom: 1rem; also ? */ 
 }
 
 .container {
-    max-width: 800px; /* was 1200px; */
-    margin:auto;
+    max-width: 900px; /* was 1200px; ? */
+    margin: auto;
 }
 
 .container h1 {
@@ -219,7 +219,7 @@ body {
 
     overflow-x:auto; /* use here ? */
 
-    padding: 1.5rem;
+    padding: 1rem;
     /* margin: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 0rem;  use ??? */
@@ -236,23 +236,22 @@ body {
 
     justify-content: flex-end;
 
-    min-width:60px;
-    height: 78%;  /* 80% or 300px;  use here ?? */
+    min-width: 70px;
+    height: 80%;  /* 80% or 300px;  use here ?? */
 }
 
 /* Background */
 .graph {
     width: 95%;  /* was 100% */
-    max-width: 50px;  /* was 60px */
+    max-width: 45px;  /* was 60px */
 
-    margin-top: 0.3rem;
-    margin-bottom: 0.5rem;
-
-    height: 250px;
+    /* margin-top: 0.3rem;
+    margin-bottom: 0.5rem;  
+    height: 250px; */
 
     background:linear-gradient(to top, white, blue);  /* was background:linear-gradient(to top,#4facfe,#00f2fe);  */
 
-    border-radius: 25px 25px;  /* or was border-radius:10px 10px 0 0; ? */
+    border-radius: 50px;  /* or was border-radius:10px 10px 0 0; or none for square shape */
 
     display:flex;
     justify-content:center;
@@ -277,9 +276,9 @@ body {
 
 /* Skill Name */
 .name {
-    margin-top: 12px;
+    margin-top: 13px;
     text-align:center;
-    font-weight: 600;  /* ? */
+    font-weight: bold;  /* or was font-weight: 600; ? */
     font-size: 1rem;
     color: white;
     transition: .5s;

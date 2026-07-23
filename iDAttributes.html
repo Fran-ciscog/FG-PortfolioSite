@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> HTML Projects- ID Attributes </title>
+
+    <style>
+      body {
+        padding-left: 1rem;
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+        #IDcss {
+            background-color: blue;
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    
+    <header>
+      <a href="Projects.html">   
+      <img src="images/abstract-blue-white-grey-squares-geometric-background_1145865-26.jpg" alt="selfie pic" style="float: left; margin-right: 2rem; height: 100px; width: 100px; border-radius: 50px; padding: 3px; background-color: blue;"> <br>
+        <a href="index.html"> | Home | </a>
+
+    </header>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h1>
+      HTML Project: <br/>
+      <em> Using ID Attributes <br> ( with HTML, CSS, and JavaScript ) </em>
+    </h1>
+    
+    <br>
+
+    <p> - Using an ID# attribute with HTML (ex. as a "Bookmark") </p>
+
+    <h4> Read Book : Table of Contents </h4>
+
+    <a href="#Ch5"> Skip to Chapter: 5 </a>
+
+    <h5> Chapter 1 </h5>
+    <p> Ttitle </p>
+    <h5> Chapter 2 </h5>
+    <p> Ttitle </p>
+    <h5> Chapter 3 </h5>
+    <p> Ttitle </p>
+    <h5> Chapter 4 </h5>
+    <p> Ttitle </p>
+    <h5 id="Ch5"> Chapter 5 </h5>
+    <p> Ttitle </p>
+    <h5> Chapter 6 </h5>
+    <p> Ttitle </p>
+    <h5> Chapter 7 </h5>
+    <p> Ttitle </p>
+
+    <hr>
+
+    <p> - Using an ID# attribute with CSS... apply's same css styling to all lines with this same "ID Label" tag </p>
+
+    <h3 id="IDcss"> with CSS </h3>
+
+    <hr>    
+
+    <h3> Using an ID# attribute <strong> <em> with JAVASCRIPT </em> </strong> </h3>
+    <p> - by using the " getElementbyID()method: " </p>
+
+    <h4 id="myheader"> Hello World! </h4>
+
+    <button onclick="displayresult()"> Click to change Text^ to say (Happy Coding!) </button>
+
+    <script>
+        function displayresult() {
+            document.getElementById("myheader").innerHTML = "Happy Coding!";
+        }
+    </script> 
+    <!-- js ?? -->
+
+    <br>
+    <hr>
+    <br>
+
+    <a href="#"> ^ Scroll back to Top ^ </a> 
+    <br>
+    <br>
+
+</body>
+</html>
+
+<!--
+comments / notes 
+
+-->
