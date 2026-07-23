@@ -179,50 +179,57 @@ body {
 
 /* Section */
 
-.skills-section {
-    width: 95%; /* was 100% */
-    margin: 0.5rem;
-    margin-left: 0.5rem;
-    padding: 0.5rem;  /* was padding: 3rem 1rem; ... or just 1rem; ? */
-    margin-top: 2rem;  /* use margin-bottom: 1rem; also ? */ 
+/* GRAPH */
+.container {
+    width: 95%;
+    max-width: 1200px;  /* or 900px;  was 1200px; ? */
+    margin: auto;
 }
 
-.container {
-    max-width: 900px; /* was 1200px; ? */
-    margin: auto;
+.animation {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.animation:hover {
+  transform: scale(1.3); /* was 1.03 */
 }
 
 .container h1 {
     text-align:center;
-    font-size:2rem;
-    margin-bottom:2.5rem;
+    margin: 25px 0;  /* or was margin-bottom:2.5rem; */
+    
     text-decoration: underline;
     color: white;
 }
 
 .container p {
     text-align: center;
-    margin-bottom:2.5rem;
     /* text-decoration: underline; */
     color: white;
 }
 
-/* GRAPH CONTAINER */
+/* Box (graph container sec) */
 
 .box {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: space-between; /* was justify-content: center; */
     align-items: flex-end;  /* use here ? */
-    gap: 7px;  /* was 12px; */
 
-    height: 320px;  /* ? */
+    gap: 2px;  /* or 7px;  was 12px; */
 
-    overflow-x:auto; /* use here ? */
+    height: 425px;  /* was 320px or 425px; ? */
 
-    padding: 1rem;
+    padding: 20px;  /* was 1rem; */
+    border-radius: 7px;
+    background-color: gray;
+
+
     /* margin: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 0rem;  use ??? */
+
+    overflow-x: auto; /* use here ? */
     
     border-left: 3px solid white;
     border-bottom: 3px solid white;
@@ -230,46 +237,41 @@ body {
 
 /* BARS */
 .skill {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     justify-content: flex-end;
 
-    min-width: 70px;
-    height: 80%;  /* 80% or 300px;  use here ?? */
+    /* was min-width: 70px;  use ? */
+    height: 70%;  /* 60% 80% or 300px;  use here ?? */
 }
 
 /* Background */
 .graph {
-    width: 95%;  /* was 100% */
-    max-width: 45px;  /* was 60px */
+    width: 45px;  /*  45px; or 95%; was 100%  */
+    background:linear-gradient(to top, blue, deepskyblue); /* was background:linear-gradient(to top,#4facfe,#00f2fe);  */
+    border-radius: 50px;  /*  was border-radius:10px 10px 0 0; or none for square shape */
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    font-weight: bold;
+    transition:.5s;       
 
-    /* margin-top: 0.3rem;
+    /* 
+    max-width: 45px;  /* was 60px margin-top: 0.3rem;
     margin-bottom: 0.5rem;  
-    height: 250px; */
-
-    background:linear-gradient(to top, white, blue);  /* was background:linear-gradient(to top,#4facfe,#00f2fe);  */
-
-    border-radius: 50px;  /* or was border-radius:10px 10px 0 0; or none for square shape */
-
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-
-    font-weight:bold;
-
-    transition:.5s;
+    height: 250px; use ? */
 }
 
 /* Hover */
 .graph:hover {
-    transform:scale(1.5);
+    transform: scale(1.5);
 }
 
 /* Percentage */
 .percent {
-    margin-top: 20px;
+    margin-top: 15px;  /* was 20px; */
     font-size: 1rem;
     color: white;
 }
@@ -277,16 +279,17 @@ body {
 /* Skill Name */
 .name {
     margin-top: 13px;
+    font-size: 1rem;
     text-align:center;
     font-weight: bold;  /* or was font-weight: 600; ? */
-    font-size: 1rem;
     color: white;
-    transition: .5s;
+
+    transition: .5s;  /* use here ? */
 }
 
-.name:hover {
+/* .name:hover {
     transform: scale(1.5);
-}
+} use here ? */
 
 /* Footer */
 footer {

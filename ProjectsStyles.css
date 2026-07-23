@@ -187,8 +187,39 @@ li { list-style: none; }
 
 li a { color: white; }
 
-/* Footer */
+/* TECH STACK icons sec */
+.icons {
+  text-align: center;
+}
 
+.tech-icons {
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* display: flex;
+  justify-content: center;
+  /* align-items: center;
+  /* flex-wrap: wrap; use ? */
+}
+
+.tech-icons img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  transition: transform 0.3s;
+  flex-direction: column;  /* or was row; */
+  /* or 
+  width: clamp(70px, 8vw, 110px);
+  height: clamp(70px, 8vw, 110px); */
+}
+
+.tech-icons img:hover {
+  transform: scale(1.5);
+}
+
+/* Footer */
 footer {
     background: transparent;
     color:white;

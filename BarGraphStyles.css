@@ -31,11 +31,13 @@ header {
   height: 60px;
   width: 60px;  /* was 120px */
   border-radius: 30px;   /* was 8px */ 
-  padding: 3px;
+  padding: 4px;
   background-color: blue;
 }
 
-h1{
+/* Sec Container */
+
+h1 {
     text-align:center;
     margin:25px 0;
 }
@@ -59,13 +61,13 @@ p { text-align: center; }
 }
 
 .box {
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
+    display: flex;
+    justify-content: space-between;  /* or justify-content: center; or justify-content: space-evenlly; */
+    align-items: flex-end;
 
     gap: 2px;  /* was 2px; */
 
-    height: 425px; /* was 300px; */
+    height: 425px; /* was 300px; ? */
 
     padding: 20px; /* was 20px; */
 
@@ -73,7 +75,7 @@ p { text-align: center; }
 
     background:white;
 
-    overflow-x:auto;
+    overflow-x: auto;
 
     border-left: 3px solid black;
     border-bottom: 3px solid black;    
@@ -81,33 +83,32 @@ p { text-align: center; }
 
 /* Each Skill bar */
 .skill {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     justify-content: flex-end;
 
     /* min-width: 55px;  use ? */
     height: 60%;  /* ? */
+    /* width: 50px;  here ? */
 }
 
 /* Bars */
 .graph {
   width: 45px;
 
-    background:linear-gradient(to top,#0059ff,#66b3ff);
+    background: linear-gradient(to top, blue, deepskyblue);
 
     border-radius: 50px;  /* was border-radius:8px 8px 0 0; or none for square shape */
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:flex-start;
+    align-items: flex-start;
 
-    color:white;
-
-    font-weight:bold;
+    font-weight: bold;
 
     transition:.5s;
 }
@@ -120,17 +121,14 @@ p { text-align: center; }
 .percent {
     padding-top: 15px;
     font-size: 1rem;
+    color: white;
 }
 
 /* Skill Name */
 .name {
-
     margin-top: 13px;
-
     font-size: 1rem;
-
     text-align: center;
-
     font-weight: bold;
 }
 
