@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 10px;  /* or padding-left: 2rem; padding-right: 2rem; */
+    outline: none; 
+    border: none;
+    text-decoration: none;
+}
+
+.animation {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.animation:hover {
+    transform: scale(1.30);  /* was 1.03 */
+}
+
+/* header sec */
+header {
+    /* display:flex; */
+    flex-direction:column;
+    /* align-items:center; */
+    justify-content:center;
+    gap: 10px;  /* ? */
+    padding: 10px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;  /* was 120px */
+  border-radius: 30px;   /* was 8px */ 
+  padding: 4px;
+  background-color: blue;
+}
+
+/* container sec */
+.container{
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    max-width: 1200px;  /* For large screens */
+}
+
+/* Responsive image */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container form{
+    background: #fff;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    padding-top: 160px;
+}
+
+.container form .inputBox{
+    margin: -5px;
+    margin-top: 20px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.container form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, lightgray, darkgray); 
+    /* original colors were background:linear-gradient(45deg, blueviolet, deeppink); */
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.container form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, lightgray, darkgray);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.container .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 50px;
+}
+
+.container .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.container .card-container .front .flexbox{
+    display: flex;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.container .card-container .back{
+    position: absolute;
+    top:0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, lightgray, darkgray);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.container .card-container .back .stripe{
+    background: black;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card-container .back .box{
+    padding: 0 20px;
+}
+
+.container .card-container .back .box span{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+
+i { font-size: x-large; }
+
+/* Example of a flexible grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    flex: 1 1 300px; /* flex-grow, flex-shrink, flex-basis */
+}
+
+/* Footer */
+footer {
+    text-align:center;
+    padding: 15px;
+}
+
+/* Media queries sec for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/*   */
